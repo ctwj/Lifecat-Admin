@@ -19,7 +19,7 @@ Mock.mock(/\/infos\.*/, 'get', loginAPI.getUserInfo)
 // 获取所有user
 Mock.mock(/\/users/, 'get', databoardAPI.getUserList)
 // 获取所有message
-Mock.mock(/\/messages/, 'get', databoardAPI.getMessageList)
+Mock.mock(/\/expense/, 'get', databoardAPI.getExpenseList)
 // 获取所有image
 Mock.mock(/\/images/, 'get', databoardAPI.getImageList)
 // 获取所有record

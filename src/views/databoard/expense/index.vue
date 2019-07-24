@@ -56,7 +56,7 @@
 </template>
 
 <script>
-  import { getUserList } from '@/api/databoard'
+  import { getExpenseList } from '@/api/databoard'
 
   export default {
     data() {
@@ -81,9 +81,9 @@
     methods: {
       fetchData() {
         this.listLoading = true
-        getUserList().then(response => {
-          console.log('res' + response.data.userList)
-          this.list = response.data.userList
+        getExpenseList().then(response => {
+          console.log('res' + response.data.expenseList)
+          this.list = response.data.expenseList
           this.listLoading = false
         })
       }

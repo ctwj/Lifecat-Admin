@@ -1,7 +1,7 @@
 import Mock from 'mockjs'
 
 const userList = []
-const messageList = []
+const expenseList = []
 const imageList = []
 const dynamicList = []
 const count = 100
@@ -22,7 +22,7 @@ for (let i = 0; i < count; i++) {
     userRole: 'user'
   }))
 
-  messageList.push(Mock.mock({
+  expenseList.push(Mock.mock({
     userId: '@increment',
     userAccountName: '@title(5, 10)',
     userName: '@first',
@@ -72,9 +72,8 @@ export default {
   getUserList: () => ({
     userList: userList
   }),
-
-  getMessageList: () => ({
-    messageList: messageList
+  getExpenseList: () => ({
+    expenseList: expenseList
   }),
 
   getImageList: () => ({

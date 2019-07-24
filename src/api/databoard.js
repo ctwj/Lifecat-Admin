@@ -8,15 +8,15 @@ export function getUserList() {
   })
 }
 
-// 获取message列表
-export function getMessageList() {
+// 获取消费
+export function getExpenseList() {
   return request({
-    url: '/messages',
+    url: '/expense',
     method: 'get'
   })
 }
 
-// 获取image列表
+// 获取体现
 export function getImageList() {
   return request({
     url: '/images',
