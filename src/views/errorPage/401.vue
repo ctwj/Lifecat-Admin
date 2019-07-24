@@ -12,7 +12,6 @@
           <li class="link-type">
             <router-link to="/dashboard">回首页</router-link>
           </li>
-          <li class="link-type"><a href="https://www.taobao.com/">随便看看</a></li>
           <li><a @click.prevent="dialogVisible=true" href="#">点我看图</a></li>
         </ul>
       </el-col>

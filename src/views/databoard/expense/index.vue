@@ -22,27 +22,7 @@
           <span>{{scope.row.userName}}</span>
         </template>
       </el-table-column>
-
-      <!--userSex-->
-      <el-table-column label="性别" width="110" align="center">
-        <template slot-scope="scope">
-          <span>{{scope.row.userSex}}</span>
-        </template>
-      </el-table-column>
-
-      <!--userEmail-->
-      <el-table-column label="邮箱" width="150" align="center">
-        <template slot-scope="scope">
-          <span>{{scope.row.userEmail}}</span>
-        </template>
-      </el-table-column>
-
-      <!--userLocation-->
-      <el-table-column label="所在位置" width="150" align="center">
-        <template slot-scope="scope">
-          <span>{{scope.row.userLocation}}</span>
-        </template>
-      </el-table-column>
+  
 
       <!--userPhoneNumber-->
       <el-table-column label="电话号码" width="150" align="center">
@@ -58,31 +38,10 @@
         </template>
       </el-table-column>
 
-      <!--userLastLogin-->
-      <el-table-column label="最后登录" width="150" align="center">
-        <template slot-scope="scope">
-          <span>{{scope.row.userLastLogin}}</span>
-        </template>
-      </el-table-column>
-
       <!--userLoginCount-->
-      <el-table-column label="访问次数" width="110" align="center">
+      <el-table-column label="消费金额" width="110" align="center">
         <template slot-scope="scope">
           <span>{{scope.row.userLoginCount}}</span>
-        </template>
-      </el-table-column>
-
-      <!--isUserDeleted-->
-      <el-table-column label="启用状态" width="110" align="center" class-name="status-col">
-        <template slot-scope="scope">
-          <el-tag :type="scope.row.isUserDeleted | statusFilter">{{scope.row.isUserDeleted}}</el-tag>
-        </template>
-      </el-table-column>
-
-      <!--userRole-->
-      <el-table-column label="权限" width="100" align="center" class-name="status-col">
-        <template slot-scope="scope">
-          <el-tag :type="scope.row.userRole | statusFilter">{{scope.row.userRole}}</el-tag>
         </template>
       </el-table-column>
 
