@@ -71,17 +71,17 @@ export const constantRouterMap = [{
                 meta: { title: '注册用户', icon: 'user' }
             },
             {
-                path: 'message',
-                name: 'Message',
+                path: 'expense',
+                name: 'Expense',
                 component: () =>
                     import ('@/views/databoard/expense/index'),
                 meta: { title: '消费记录', icon: 'guide' }
             },
             {
-                path: 'image',
-                name: 'Image',
+                path: 'withdrawal',
+                name: 'Withdrawal',
                 component: () =>
-                    import ('@/views/databoard/image/index'),
+                    import ('@/views/databoard/withdrawal/index'),
                 meta: { title: '提现记录', icon: 'tab' }
             },
             {

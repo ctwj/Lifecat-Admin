@@ -2,85 +2,85 @@ import Mock from 'mockjs'
 
 const userList = []
 const expenseList = []
-const imageList = []
+const withdrawalList = []
 const dynamicList = []
 const count = 100
 
 for (let i = 0; i < count; i++) {
-  userList.push(Mock.mock({
-    userId: '@increment',
-    userAccountName: '@title(5, 10)',
-    userName: '@first',
-    userSex: '男',
-    userEmail: +Mock.Random.date('T'),
-    userLocation: '中国，无锡',
-    userGmtCreate: '@datetime',
-    userPhoneNumber: 18812345678,
-    userLastLogin: '@datetime',
-    userLoginCount: '@datetime',
-    isUserDeleted: false,
-    userRole: 'user'
-  }))
+    userList.push(Mock.mock({
+        userId: '@increment',
+        userAccountName: '@title(5, 10)',
+        userName: '@first',
+        userSex: '男',
+        userEmail: +Mock.Random.date('T'),
+        userLocation: '中国，无锡',
+        userGmtCreate: '@datetime',
+        userPhoneNumber: 18812345678,
+        userLastLogin: '@datetime',
+        userLoginCount: '@datetime',
+        isUserDeleted: false,
+        userRole: 'user'
+    }))
 
-  expenseList.push(Mock.mock({
-    userId: '@increment',
-    userAccountName: '@title(5, 10)',
-    userName: '@first',
-    userSex: '男',
-    userEmail: +Mock.Random.date('T'),
-    userLocation: '中国，无锡',
-    userGmtCreate: '@datetime',
-    userPhoneNumber: 18812345678,
-    userLastLogin: '@datetime',
-    userLoginCount: '@datetime',
-    isUserDeleted: false,
-    userRole: 'user'
-  }))
+    expenseList.push(Mock.mock({
+        userId: '@increment',
+        userAccountName: '@title(5, 10)',
+        userName: '@first',
+        userSex: '男',
+        userEmail: +Mock.Random.date('T'),
+        userLocation: '中国，无锡',
+        userGmtCreate: '@datetime',
+        userPhoneNumber: 18812345678,
+        userLastLogin: '@datetime',
+        userLoginCount: '@datetime',
+        isUserDeleted: false,
+        userRole: 'user'
+    }))
 
-  imageList.push(Mock.mock({
-    userId: '@increment',
-    userAccountName: '@title(5, 10)',
-    userName: '@first',
-    userSex: '男',
-    userEmail: +Mock.Random.date('T'),
-    userLocation: '中国，无锡',
-    userGmtCreate: '@datetime',
-    userPhoneNumber: 18812345678,
-    userLastLogin: '@datetime',
-    userLoginCount: '@datetime',
-    isUserDeleted: false,
-    userRole: 'user'
-  }))
+    withdrawalList.push(Mock.mock({
+        userId: '@increment',
+        userAccountName: '@title(5, 10)',
+        userName: '@first',
+        userSex: '男',
+        userEmail: +Mock.Random.date('T'),
+        userLocation: '中国，无锡',
+        userGmtCreate: '@datetime',
+        userPhoneNumber: 18812345678,
+        userLastLogin: '@datetime',
+        userLoginCount: '@datetime',
+        isUserDeleted: false,
+        userRole: 'user'
+    }))
 
-  dynamicList.push(Mock.mock({
-    userId: '@increment',
-    userAccountName: '@title(5, 10)',
-    userName: '@first',
-    userSex: '男',
-    userEmail: +Mock.Random.date('T'),
-    userLocation: '中国，无锡',
-    userGmtCreate: '@datetime',
-    userPhoneNumber: 18812345678,
-    userLastLogin: '@datetime',
-    userLoginCount: '@datetime',
-    isUserDeleted: false,
-    userRole: 'user'
-  }))
+    dynamicList.push(Mock.mock({
+        userId: '@increment',
+        userAccountName: '@title(5, 10)',
+        userName: '@first',
+        userSex: '男',
+        userEmail: +Mock.Random.date('T'),
+        userLocation: '中国，无锡',
+        userGmtCreate: '@datetime',
+        userPhoneNumber: 18812345678,
+        userLastLogin: '@datetime',
+        userLoginCount: '@datetime',
+        isUserDeleted: false,
+        userRole: 'user'
+    }))
 }
 
 export default {
-  getUserList: () => ({
-    userList: userList
-  }),
-  getExpenseList: () => ({
-    expenseList: expenseList
-  }),
+    getUserList: () => ({
+        userList: userList
+    }),
+    getExpenseList: () => ({
+        expenseList: expenseList
+    }),
 
-  getImageList: () => ({
-    imageList: imageList
-  }),
+    getWithdrawalList: () => ({
+        withdrawalList: withdrawalList
+    }),
 
-  getDynamicList: () => ({
-    dynamicList: dynamicList
-  })
+    getDynamicList: () => ({
+        dynamicList: dynamicList
+    })
 }

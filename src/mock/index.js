@@ -18,11 +18,11 @@ Mock.mock(/\/infos\.*/, 'get', loginAPI.getUserInfo)
 // 数据相关
 // 获取所有user
 Mock.mock(/\/users/, 'get', databoardAPI.getUserList)
-// 获取所有message
+    // 获取所有message
 Mock.mock(/\/expense/, 'get', databoardAPI.getExpenseList)
-// 获取所有image
-Mock.mock(/\/images/, 'get', databoardAPI.getImageList)
-// 获取所有record
+    // 获取所有image
+Mock.mock(/\/withdrawal/, 'get', databoardAPI.getWithdrawalList)
+    // 获取所有record
 Mock.mock(/\/records/, 'get', databoardAPI.getDynamicList)
 
 // 统计表相关

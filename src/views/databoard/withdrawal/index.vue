@@ -97,7 +97,7 @@
 </template>
 
 <script>
-  import { getUserList } from '@/api/databoard'
+  import { getWithdrawalList } from '@/api/databoard'
 
   export default {
     data() {
@@ -122,9 +122,9 @@
     methods: {
       fetchData() {
         this.listLoading = true
-        getUserList().then(response => {
-          console.log('res' + response.data.userList)
-          this.list = response.data.userList
+        getWithdrawalList().then(response => {
+          console.log('res' + response.data.withdrawalList)
+          this.list = response.data.withdrawalList
           this.listLoading = false
         })
       }
