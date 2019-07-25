@@ -25,31 +25,14 @@ for (let i = 0; i < count; i++) {
     expenseList.push(Mock.mock({
         userId: '@increment',
         userAccountName: '@title(5, 10)',
-        userName: '@first',
-        userSex: '男',
-        userEmail: +Mock.Random.date('T'),
-        userLocation: '中国，无锡',
-        userGmtCreate: '@datetime',
-        userPhoneNumber: 18812345678,
-        userLastLogin: '@datetime',
-        userLoginCount: '@datetime',
-        isUserDeleted: false,
-        userRole: 'user'
+        spendMoney: '@natural(1, 800)',
+        spendTime: '@datetime'
     }))
 
     withdrawalList.push(Mock.mock({
-        userId: '@increment',
-        userAccountName: '@title(5, 10)',
-        userName: '@first',
-        userSex: '男',
-        userEmail: +Mock.Random.date('T'),
-        userLocation: '中国，无锡',
-        userGmtCreate: '@datetime',
-        userPhoneNumber: 18812345678,
-        userLastLogin: '@datetime',
-        userLoginCount: '@datetime',
-        isUserDeleted: false,
-        userRole: 'user'
+        id: '@increment',
+        withdrawalMoney: '@natural(1,900)',
+        withdrawalTime: '@datetime'
     }))
 
     dynamicList.push(Mock.mock({

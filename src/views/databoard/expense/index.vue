@@ -10,44 +10,23 @@
       </el-table-column>
 
       <!--userAccountName-->
-      <el-table-column label="用户名" width="110" align="center">
+      <el-table-column label="用户名" width="210" align="center">
         <template slot-scope="scope">
           <span>{{scope.row.userAccountName}}</span>
-        </template>
-      </el-table-column>
-
-      <!--userName-->
-      <el-table-column label="昵称" width="110" align="center">
-        <template slot-scope="scope">
-          <span>{{scope.row.userName}}</span>
-        </template>
-      </el-table-column>
-  
-
-      <!--userPhoneNumber-->
-      <el-table-column label="电话号码" width="150" align="center">
-        <template slot-scope="scope">
-          <span>{{scope.row.userPhoneNumber}}</span>
-        </template>
-      </el-table-column>
-
-      <!--userGmtCreate-->
-      <el-table-column label="注册时间" width="150" align="center">
-        <template slot-scope="scope">
-          <span>{{scope.row.userGmtCreate}}</span>
         </template>
       </el-table-column>
 
       <!--userLoginCount-->
       <el-table-column label="消费金额" width="110" align="center">
         <template slot-scope="scope">
-          <span>{{scope.row.userLoginCount}}</span>
+          <span>{{scope.row.spendMoney}}</span>
         </template>
       </el-table-column>
 
-      <el-table-column label="Actions" min-width="200" align="center" prop="created_at">
+      <!--userGmtCreate-->
+      <el-table-column label="消费时间" width="250" align="center">
         <template slot-scope="scope">
-          <i class="el-icon-time"></i>
+          <span>{{scope.row.spendTime}}</span>
         </template>
       </el-table-column>
 
