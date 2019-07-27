@@ -15,7 +15,7 @@
 ### 本地部署
 ``` bash
 # Clone project
-git clone https://github.com/ctwj/Lifecat-lifecat.git
+git clone https://github.com/ctwj/Simple-Vue-Admin-Template.git
 
 # Install dependencies
 npm install
