@@ -1,4 +1,4 @@
-# lifecat-admin
+# Simple-Vue-Admin-Template
 
 ![java](https://img.shields.io/badge/language-java-red.svg)
 ![许可](https://img.shields.io/dub/l/vibe-d.svg) 
