@@ -9,7 +9,7 @@
 
 ## 脚手架模板使用
 
- [模板github地址](https://github.com/PanJiaChen/vue-element-admin)
+ [模板github地址](https://github.com/ctwj/Simple-Vue-Admin-Template)
 
 ## 项目部署
 ### 本地部署
